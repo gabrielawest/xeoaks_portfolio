@@ -13,6 +13,10 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Roboto:wght@100&display=swap" rel="stylesheet">
 		<title>{title}</title>
 	</head>
 	<body>
@@ -20,8 +24,9 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 	html {
-		background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+		background: linear-gradient(-30deg, #070602ff, #692C34ff, #2C4F77ff, #063472ff, #0E2954ff, #070602ff);
 		background-size: 400% 400%;
 		animation: gradient 26s ease-in-out infinite;
 		height: 100vh;
@@ -45,8 +50,12 @@ const { title } = Astro.props;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #e73c7e 20%, rgba(255, 255, 255));
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: 'Roboto', system-ui, sans-serif;
 		background-color: #e3eff3;
+		text-transform: lowercase;
+	}
+	h1 {
+		font-family: 'Atkinson Hyperlegible', system-ui, sans-serif;
 	}
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
