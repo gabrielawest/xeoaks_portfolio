@@ -1,14 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+
+
 ---
 
 <Layout title="XeOaks">
 	<main>
-		<h1><span class="text-gradient">XeOaks Artwork</span></h1>
+		<h1 class="title"><span class="text-gradient">XeOaks</span></h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed. Non consectetur a erat nam at lectus urna duis convallis. Lectus magna fringilla urna porttitor rhoncus dolor purus. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
@@ -39,12 +40,13 @@ import Card from '../components/Card.astro';
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 60ch;
+		max-width: 110ch;
 	}
 	h1 {
 		font-size: 3rem;
 		font-weight: 800;
 		margin: 0;
+		padding-left: 10%;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -52,6 +54,13 @@ import Card from '../components/Card.astro';
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
+		
+	}
+	.title {
+		background-image: linear-gradient(45deg, rgba(35, 213, 171, 0.5), #ee765280 16%, white 60%);
+		background-size: 800%;
+		background-position: 0%;
+		border-radius: 0.4rem;
 	}
 	.instructions {
 		line-height: 1.6;
