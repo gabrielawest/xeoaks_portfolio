@@ -50,7 +50,7 @@ const { title } = Astro.props;
 <style is:global>
 	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 	html {
-		background: linear-gradient(-45deg, #070602ff, #692C34ff, #2C4F77ff, #063472ff, #0E2954ff, #070602ff);
+		background: linear-gradient(-45deg, #070602ff, #692C34ff, rgb(33, 60, 90), #063472ff, rgb(4, 15, 32), #070602ff);
 		background-size: 400% 400%;
 		animation: gradient 26s ease-in-out infinite;
 		height: 100vh;
@@ -97,13 +97,15 @@ const { title } = Astro.props;
 		height: 94vh;
 		width: 100%;
 		min-width: max-content;
-		background: linear-gradient(-45deg, #24242488, #78a3f388, #2C4F77ff, #063472ff, #0E2954ff, #070602ff);
+		background: linear-gradient(-45deg, #070602ff, #692C34ff, rgb(33, 60, 90), #063472ff, rgb(4, 15, 32), #070602ff);
 		background-size: 400% 400%;
 		animation: gradient 26s ease-in-out infinite;	
 		padding: 1rem;
 		margin: 0.5rem;
 		overflow: auto;
-		border-radius: 1rem;
+		border-radius: 2rem;
+		border: .1px solid #070602ff;
+		box-shadow: 5px 5px 7px #070602ff;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
